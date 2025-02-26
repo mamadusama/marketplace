@@ -4,7 +4,7 @@
 O Marketplace é uma plataforma robusta e escalável onde usuários podem **comprar e vender produtos** de diversas categorias. 
 Ele foi projetado para garantir **segurança, eficiência e interatividade**, utilizando tecnologias modernas.
 
-### **🔹 Tecnologias Utilizadas:**
+### ** Tecnologias Utilizadas:**
 - **Back-end:** Django com Django Templates (sem REST Framework)
 - **Front-end:** Django Templates + Alpine.js + Tailwind CSS
 - **Banco de Dados:** MySQL
@@ -14,10 +14,31 @@ Ele foi projetado para garantir **segurança, eficiência e interatividade**, ut
 - **Mensagens em Tempo Real:** WebSockets com Django Channels
 - **Infraestrutura:** Docker, AWS EC2, Nginx, Gunicorn
 
+
+---
+
+## **2️⃣ Estrutura do Projeto**
+Para garantir uma organização profissional e escalável, o projeto será estruturado da seguinte forma:
+
+📂 `marketplace/` *(Projeto principal)*  
+ ├── 📂 `config/` *(Configurações globais do Django, incluindo settings.py, urls.py, wsgi.py)*  
+ ├── 📂 `apps/` *(Todos os apps do projeto ficam aqui para melhor modularização)*  
+ │   ├── 📂 `usuarios/` *(Gerenciamento de usuários e perfis de vendedores)*  
+ │   ├── 📂 `produtos/` *(Gerenciamento de produtos e categorias)*  
+ │   ├── 📂 `pedidos/` *(Carrinho de compras, pedidos e pagamentos)*  
+ │   ├── 📂 `chat/` *(Mensagens entre usuários e suporte)*  
+ │   ├── 📂 `avaliacoes/` *(Avaliação de produtos e vendedores)*  
+ │   ├── 📂 `logistica/` *(Gerenciamento de frete e rastreamento de pedidos)*  
+ ├── 📂 `templates/` *(Templates HTML do Django, organizados por app)*  
+ ├── 📂 `static/` *(Arquivos CSS, JavaScript e imagens estáticas)*  
+ ├── 📂 `media/` *(Arquivos de upload dos usuários, como fotos de produtos)*  
+ ├── 📄 `manage.py` *(Comando principal do Django para gerenciar o projeto)*  
+
+
 ---
 
 ## **2️⃣ Estrutura do Banco de Dados**
-### **🔹 Usuários**
+### ** Usuários**
 Armazena os dados dos usuários, incluindo compradores e vendedores.
 
 | Campo               | Tipo        | Descrição |
@@ -32,7 +53,7 @@ Armazena os dados dos usuários, incluindo compradores e vendedores.
 | `endereco`        | Text        | Endereço principal do usuário |
 | `data_cadastro`   | DateTime    | Data do registro |
 
-### **🔹 Perfil do Vendedor**
+### ** Perfil do Vendedor**
 Contém informações adicionais obrigatórias para vendedores.
 
 | Campo              | Tipo        | Descrição |
@@ -48,7 +69,7 @@ Contém informações adicionais obrigatórias para vendedores.
 | `nivel_vendedor`  | Enum (`novo`, `verificado`, `top`) | Nível do vendedor |
 | `data_cadastro`   | DateTime    | Data de ativação do modo vendedor |
 
-### **🔹 Categorias e Produtos**
+### * 🔹 Categorias e Produtos**
 Os produtos pertencem a categorias predefinidas.
 
 | Campo        | Tipo        | Descrição |
@@ -72,7 +93,7 @@ Os produtos pertencem a categorias predefinidas.
 | `categoria_id` | ForeignKey (Categoria) | Categoria do produto |
 | `data_criacao` | DateTime  | Data de publicação |
 
-### **🔹 Avaliações de Produtos e Vendedores**
+### **  Avaliações de Produtos e Vendedores**
 Os usuários podem avaliar produtos e vendedores com base na experiência de compra.
 
 | Campo         | Tipo        | Descrição |
@@ -93,7 +114,7 @@ Os usuários podem avaliar produtos e vendedores com base na experiência de com
 | `comentario` | Text        | Comentário sobre o vendedor |
 | `data_avaliacao` | DateTime | Data da avaliação |
 
-### **🔹 Chat e Suporte**
+### ** Chat e Suporte**
 Sistema de mensagens entre usuários e a equipe de suporte.
 
 | Campo         | Tipo        | Descrição |
@@ -112,13 +133,7 @@ Sistema de mensagens entre usuários e a equipe de suporte.
 - **Proteção contra fraudes no checkout**
 - **Moderação automática de produtos suspeitos**
 
----
-
-## **4️⃣ Próximos Passos**
-1️⃣ Implementação do banco de dados no MySQL.
-2️⃣ Estruturação das Views e Templates do Django.
-3️⃣ Desenvolvimento do front-end dinâmico com Alpine.js e Tailwind.
 
 ---
-📌 **Esta documentação será atualizada conforme o projeto evolui!** 🚀
+**Esta documentação será atualizada conforme o projeto evolui!** 
 
