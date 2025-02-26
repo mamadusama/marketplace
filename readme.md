@@ -135,5 +135,115 @@ Sistema de mensagens entre usuários e a equipe de suporte.
 
 
 ---
+
+# **📌 Estrutura das Telas do Marketplace**
+
+## **1️⃣ Tela Inicial (Home)**
+### 🔹 Funcionalidades:
+- Barra de pesquisa global
+- Categorias em destaque
+- Produtos recomendados
+- Ofertas e descontos
+- Vendedores de destaque
+- Botões de acesso rápido (Entrar, Registrar-se, Vender Agora)
+
+## **2️⃣ Tela de Cadastro/Login**
+### 🔹 Funcionalidades:
+- Formulário de login (e-mail e senha)
+- Cadastro de novos usuários (nome, e-mail, senha, telefone, endereço)
+- Opção de "Quero Vender" para iniciar o cadastro como vendedor
+- Recuperação de senha via e-mail
+
+## **3️⃣ Tela de Perfil do Usuário**
+### 🔹 Funcionalidades:
+- Exibição de dados pessoais
+- Opção para editar perfil (foto, nome, telefone, endereço)
+- Histórico de compras e vendas
+- Botão "Ativar Modo Vendedor" para usuários que desejam vender
+- Área de avaliações recebidas
+
+## **4️⃣ Tela de Perfil do Vendedor**
+### 🔹 Funcionalidades:
+- Informações sobre a loja (nome, descrição, contato)
+- Produtos cadastrados com opção de edição
+- Análises de desempenho (vendas, avaliações, pedidos pendentes)
+- Histórico de transações e pagamentos
+- Nível do vendedor (Novo, Verificado, Top)
+
+## **5️⃣ Tela de Cadastro de Produto**
+### 🔹 Funcionalidades:
+- Formulário com:
+  - Nome do produto
+  - Descrição detalhada
+  - Categoria
+  - Preço
+  - Quantidade em estoque
+  - Fotos e vídeos do produto
+  - Peso e dimensões (para cálculo de frete)
+  - Opção de variações (tamanhos, cores)
+  - Escolha do método de entrega
+- Botão "Salvar e Publicar"
+
+## **6️⃣ Tela de Listagem de Produtos**
+### 🔹 Funcionalidades:
+- Exibição de produtos por categoria
+- Filtros avançados (preço, avaliação, localização)
+- Ordenação (mais vendidos, melhor avaliados, mais baratos)
+- Botão "Adicionar ao Carrinho"
+
+## **7️⃣ Tela de Detalhes do Produto**
+### 🔹 Funcionalidades:
+- Nome, preço e descrição do produto
+- Fotos e vídeos
+- Informações do vendedor
+- Avaliações e comentários de compradores
+- Botão "Conversar com o Vendedor"
+- Botão "Comprar Agora" ou "Adicionar ao Carrinho"
+
+## **8️⃣ Tela de Carrinho de Compras**
+### 🔹 Funcionalidades:
+- Listagem dos produtos adicionados
+- Opção para alterar quantidade ou remover itens
+- Cálculo do valor total + frete
+- Escolha do método de pagamento
+- Botão "Finalizar Compra"
+
+## **9️⃣ Tela de Pagamento**
+### 🔹 Funcionalidades:
+- Escolha do método de pagamento (Cartão, PayPal, MBWay, PIX, Dinheiro na Entrega)
+- Formulário para dados do cartão (caso aplicável)
+- Botão "Confirmar Pagamento"
+
+## **🔟 Tela de Pedidos e Rastreamento**
+### 🔹 Funcionalidades:
+- Histórico de pedidos
+- Status do pedido (pendente, pago, enviado, entregue)
+- Código de rastreamento e transportadora
+- Botão "Abrir Disputa" caso haja problemas
+
+## **1️⃣1️⃣ Tela de Chat**
+### 🔹 Funcionalidades:
+- Conversa entre comprador e vendedor
+- Envio de mensagens em tempo real
+- Notificações de novas mensagens
+- Opção de envio de imagens e arquivos
+
+## **1️⃣2️⃣ Tela de Avaliações**
+### 🔹 Funcionalidades:
+- Exibição de avaliações de produtos e vendedores
+- Campo para adicionar uma nova avaliação (nota 1-5 estrelas + comentário)
+- Estatísticas de avaliações
+
+## **1️⃣3️⃣ Tela de Suporte**
+### 🔹 Funcionalidades:
+- Contato direto com a equipe do marketplace
+- Formulário para enviar dúvidas ou problemas
+- Histórico de conversas com o suporte
+
+
+
+---
+
+
 **Esta documentação será atualizada conforme o projeto evolui!** 
 
